@@ -14,9 +14,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/fxpgr/go-exchange-client/api/public"
-	"github.com/fxpgr/go-exchange-client/helpers"
-	"github.com/fxpgr/go-exchange-client/models"
+	"github.com/xuyangcn/go-exchange-client/api/public"
+	"github.com/xuyangcn/go-exchange-client/helpers"
+	"github.com/xuyangcn/go-exchange-client/models"
 	"github.com/pkg/errors"
 	"github.com/tidwall/gjson"
 )

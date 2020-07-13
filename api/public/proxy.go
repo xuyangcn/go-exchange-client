@@ -1,7 +1,7 @@
 package public
 
 import (
-	"github.com/fxpgr/go-exchange-client/logger"
+	"github.com/xuyangcn/go-exchange-client/logger"
 	"io/ioutil"
 	"math/rand"
 	"net/http"

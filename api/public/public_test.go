@@ -2,7 +2,7 @@ package public
 
 import (
 	"fmt"
-	"github.com/fxpgr/go-exchange-client/models"
+	"github.com/xuyangcn/go-exchange-client/models"
 	"github.com/patrickmn/go-cache"
 	"io/ioutil"
 	"math"

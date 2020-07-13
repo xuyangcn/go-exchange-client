@@ -2,7 +2,7 @@ package public
 
 import (
 	"errors"
-	"github.com/fxpgr/go-exchange-client/models"
+	"github.com/xuyangcn/go-exchange-client/models"
 	"net/http"
 	"strings"
 	"sync"

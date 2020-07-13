@@ -10,8 +10,8 @@ import (
 	"time"
 
 	"github.com/antonholmquist/jason"
-	"github.com/fxpgr/go-exchange-client/api/public"
-	"github.com/fxpgr/go-exchange-client/models"
+	"github.com/xuyangcn/go-exchange-client/api/public"
+	"github.com/xuyangcn/go-exchange-client/models"
 	"github.com/pkg/errors"
 )
 

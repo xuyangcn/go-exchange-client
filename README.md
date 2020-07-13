@@ -1,8 +1,8 @@
 # Go-ccex-api-Client - a Client for  Bitcoin exchanges
 
-[![GoDoc](https://img.shields.io/badge/api-Godoc-blue.svg?style=flat-square)](https://godoc.org/github.com/fxpgr/go-ccex-api-client)
-[![Build Status](https://travis-ci.org/fxpgr/go-ccex-api-client.svg?branch=master&time=now)](https://travis-ci.org/fxpgr/go-ccex-api-client)
-[![Coverage Status](https://coveralls.io/repos/github/fxpgr/go-ccex-api-client/badge.svg?branch=master)](https://coveralls.io/github/fxpgr/go-ccex-api-client?branch=master&time=now)
+[![GoDoc](https://img.shields.io/badge/api-Godoc-blue.svg?style=flat-square)](https://godoc.org/github.com/xuyangcn/go-ccex-api-client)
+[![Build Status](https://travis-ci.org/xuyangcn/go-ccex-api-client.svg?branch=master&time=now)](https://travis-ci.org/xuyangcn/go-ccex-api-client)
+[![Coverage Status](https://coveralls.io/repos/github/xuyangcn/go-ccex-api-client/badge.svg?branch=master)](https://coveralls.io/github/xuyangcn/go-ccex-api-client?branch=master&time=now)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 
 This package presents a client for cryptocoin exchange api.
@@ -14,9 +14,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/fxpgr/go-ccex-api-client/api/public"
-	"github.com/fxpgr/go-ccex-api-client/api/private"
-	"github.com/fxpgr/go-ccex-api-client/models"
+	"github.com/xuyangcn/go-ccex-api-client/api/public"
+	"github.com/xuyangcn/go-ccex-api-client/api/private"
+	"github.com/xuyangcn/go-ccex-api-client/models"
 )
 
 func main() {

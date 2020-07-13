@@ -7,8 +7,8 @@ import (
 
 	"fmt"
 	"github.com/antonholmquist/jason"
-	"github.com/fxpgr/go-exchange-client/api/unified"
-	"github.com/fxpgr/go-exchange-client/models"
+	"github.com/xuyangcn/go-exchange-client/api/unified"
+	"github.com/xuyangcn/go-exchange-client/models"
 	"github.com/patrickmn/go-cache"
 	"github.com/pkg/errors"
 	"github.com/tidwall/gjson"

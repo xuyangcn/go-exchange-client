@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/fxpgr/go-exchange-client/api/public"
+	"github.com/xuyangcn/go-exchange-client/api/public"
 )
 
 func main() {

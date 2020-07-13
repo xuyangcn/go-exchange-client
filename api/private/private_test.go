@@ -1,7 +1,7 @@
 package private
 
 import (
-	"github.com/fxpgr/go-exchange-client/models"
+	"github.com/xuyangcn/go-exchange-client/models"
 	"io/ioutil"
 	"net/http"
 	"strings"
