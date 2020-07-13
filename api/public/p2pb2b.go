@@ -84,7 +84,7 @@ func (h *P2pb2bApi) fetchSettlements() error {
 	if err != nil {
 		return errors.Wrapf(err, "failed to parse json")
 	}
-	pairs := json.Path("result").Children()
+	pairs,err := json.Path("result").Children()
 	if err != nil {
 		return errors.Wrapf(err, "failed to parse json")
 	}
@@ -125,7 +125,7 @@ func (h *P2pb2bApi) fetchPrecision() error {
 	if err != nil {
 		return errors.Wrapf(err, "failed to parse json")
 	}
-	rateMap := json.Path("result").ChildrenMap()
+	rateMap,err := json.Path("result").ChildrenMap()
 	if err != nil {
 		return errors.Wrapf(err, "failed to parse json")
 	}
@@ -190,7 +190,7 @@ func (h *P2pb2bApi) fetchRate() error {
 	if err != nil {
 		return errors.Wrapf(err, "failed to parse json")
 	}
-	rateMap := json.Path("result").ChildrenMap()
+	rateMap,err := json.Path("result").ChildrenMap()
 	if err != nil {
 		return errors.Wrapf(err, "failed to parse json children map")
 	}
