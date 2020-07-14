@@ -14,9 +14,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/xuyangcn/go-ccex-api-client/api/public"
-	"github.com/xuyangcn/go-ccex-api-client/api/private"
-	"github.com/xuyangcn/go-ccex-api-client/models"
+	"github.com/xuyangcn/go-exchange-client/api/public"
+	"github.com/xuyangcn/go-exchange-client/api/private"
+	"github.com/xuyangcn/go-exchange-client/models"
 )
 
 func main() {
