@@ -17,7 +17,7 @@ var (
 type PublicClient interface {
 	// Volume(trading string, settlement string) (float64, error)
 	CurrencyPairs() ([]models.CurrencyPair, error)
-	// Rate(trading string, settlement string) (float64, error)
+	Rate(trading string, settlement string) (float64, error)
 	// RateMap() (map[string]map[string]float64, error)
 	// VolumeMap() (map[string]map[string]float64, error)
 	OrderBookTickMap() (map[string]map[string]models.OrderBookTick, error)
