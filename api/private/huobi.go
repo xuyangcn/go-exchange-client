@@ -97,7 +97,7 @@ func (h *HuobiApi) privateApi(method string, path string, params *url.Values) ([
 	urlStr := h.BaseURL + path + "?" + params.Encode()
 	fmt.Println("===urlStr:",urlStr)
 	resBody, err := NewHttpRequest(&http.Client{}, method, urlStr, "", nil)
-	fmt.Println("===resBody:",resBody)
+	fmt.Println("===resBody:",string(resBody))
 	return resBody, err
 }
 
