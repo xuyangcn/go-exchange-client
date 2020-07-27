@@ -95,7 +95,6 @@ func (h *HuobiApi) privateApi(method string, path string, params *url.Values) ([
 	sign, _ := GetParamHmacSHA256Base64Sign(secretKey, payload)
 	params.Set("Signature", sign)
 	urlStr := h.BaseURL + path + "?" + params.Encode()
-	fmt.Println("===urlStr:",urlStr)
 	resBody, err := NewHttpRequest(&http.Client{}, method, urlStr, "", nil)
 	return resBody, err
 }
@@ -498,8 +497,7 @@ func (h *HuobiApi) Order(trading string, settlement string, ordertype models.Ord
 	priceStr := strconv.FormatFloat(price, 'f', 4, 64)
 	params.Set("amount", amountStr)
 	params.Set("price", priceStr)
-	params.Set("client-order-id", "abc123")
-	byteArray, err := h.privateApi("GET", "/v1/order/orders/place", params)
+	byteArray, err := h.privateApi("POST", "/v1/order/orders/place", params)
 	if err != nil {
 		return "", err
 	}
