@@ -498,6 +498,7 @@ func (h *HuobiApi) Order(trading string, settlement string, ordertype models.Ord
 	priceStr := strconv.FormatFloat(price, 'f', 4, 64)
 	params.Set("amount", amountStr)
 	params.Set("price", priceStr)
+	params.Set("client-order-id", "abc123")
 	byteArray, err := h.privateApi("GET", "/v1/order/orders/place", params)
 	if err != nil {
 		return "", err
