@@ -481,7 +481,8 @@ func (h *HuobiApi) ActiveOrders() ([]*models.Order, error) {
 }
 
 func (h *HuobiApi) Order(trading string, settlement string, ordertype models.OrderType, price float64, amount float64) (string, error) {
-	accountId, err := h.getAccountId()
+	//accountId, err := h.getAccountId()
+	accountId := 566720
 	if err != nil {
 		return "", err
 	}
