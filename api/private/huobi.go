@@ -496,7 +496,7 @@ func (h *HuobiApi) Order(trading string, settlement string, ordertype models.Ord
 	}
 	params.Set("symbol", strings.ToLower(fmt.Sprintf("%s%s", trading, settlement)))
 	params.Set("account-id", accountId)
-	amountStr := strconv.FormatFloat(amount, 'f', 4, 64)
+	amountStr := strconv.FormatFloat(amount, 'f', 2, 64)
 	priceStr := strconv.FormatFloat(price, 'f', 4, 64)
 	params.Set("amount", amountStr)
 	params.Set("price", priceStr)
