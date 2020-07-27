@@ -501,6 +501,7 @@ func (h *HuobiApi) Order(trading string, settlement string, ordertype models.Ord
 	if err != nil {
 		return "", err
 	}
+	fmt.Println("===huobi:",string(byteArray))
 	json, err := jason.NewObjectFromBytes(byteArray)
 	if err != nil {
 		return "", errors.Wrapf(err, "failed to parse json")
