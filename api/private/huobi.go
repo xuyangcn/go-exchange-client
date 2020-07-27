@@ -95,7 +95,9 @@ func (h *HuobiApi) privateApi(method string, path string, params *url.Values) ([
 	sign, _ := GetParamHmacSHA256Base64Sign(secretKey, payload)
 	params.Set("Signature", sign)
 	urlStr := h.BaseURL + path + "?" + params.Encode()
+	fmt.Println("===urlStr:",urlStr)
 	resBody, err := NewHttpRequest(&http.Client{}, method, urlStr, "", nil)
+	fmt.Println("===resBody:",resBody)
 	return resBody, err
 }
 
