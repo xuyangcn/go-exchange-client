@@ -5,6 +5,7 @@ type OrderType int
 const (
 	Ask OrderType = iota
 	Bid
+	AskMarket
 )
 
 type Order struct {
